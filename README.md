@@ -25,7 +25,7 @@ Reactome Failed Searches Analysis
     Output: `abstracts.txt`
 
 4. **Get MESH Terms for the abstracts**  
-    Upload `abstracts.txt` in for batch processing. You might have to make an account, which can be done [here](https://uts.nlm.nih.gov/license.html).  
+    Upload `abstracts.txt` in [Batch Medical Text Indexer (MTI)](https://ii.nlm.nih.gov/Batch/UTS_Required/mti.shtml) for batch processing. You might have to make an account, which can be done [here](https://uts.nlm.nih.gov/license.html).  
     You will me notified in mail when processing is done.
     Download the `text.out` file and note the path to it, this will be input to our next step.
 
