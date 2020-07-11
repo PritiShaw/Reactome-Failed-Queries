@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 from indra.sources import indra_db_rest
 from indra.assemblers.html.assembler import HtmlAssembler
 
-os.environ["INDRA_DB_REST_URL"] = "API_ENDPOINT"
+os.environ["INDRA_DB_REST_URL"] = "https://db.indra.bio"
 start_time = time.time()
 
 
@@ -19,7 +19,7 @@ def extractFromXML(fileContent, citationCount, term):
         destCSV = open(destFileName, 'a')
     else:
         destCSV = open(destFileName, 'w')
-        print("PMID,TERM,JOURNAL_TITLE,YEAR,PMCID,DOI,PMC_CITATION_COUNT,INDRA_STATEMENT_COUNT", file=destCSV)
+        print("PMID,TERM,JOURNAL_TITLE,YEAR,PMCID,DOI,PMC_CITATION_COUNT,INDRA_STATEMENT_COUNT,OC_CITATION_COUNT", file=destCSV)
     writer = csv.writer(destCSV, delimiter=',',
                         quotechar='"', quoting=csv.QUOTE_MINIMAL)
     tree = ET.fromstring(fileContent, ET.XMLParser(encoding='utf-8'))
@@ -61,14 +61,18 @@ def extractFromXML(fileContent, citationCount, term):
         article_type = pubType or ""
         article_topics = topics_string or ""
         pmc_citation_count = citationCount
-
-        stmt = indra_db_rest.get_statements_for_paper(
-            [('pmid', PMID)]).statements
+        
+        output= requests.get("https://opencitations.net/api/v1/metadata/"+ DOI)
+        if (len(output.json())>0):
+            OC_CITATION_COUNT = (output.json()[0]["citation_count"])
+        else:
+            OC_CITATION_COUNT = ""
+        
+        stmt = indra_db_rest.get_statements_for_paper([('pmid', PMID)]).statements
         # print(citationCount,stmt)
         indra_stmt_count = len(stmt)
         # storing in csv file
-        writer.writerow([PMID, term, title, Year, PMCID, DOI,
-                         pmc_citation_count, indra_stmt_count])
+        writer.writerow([PMID, term, title, Year, PMCID, DOI,pmc_citation_count, indra_stmt_count, OC_CITATION_COUNT])
     # Closing file
     destCSV.close()
 
