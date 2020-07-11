@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 from indra.sources import indra_db_rest
 from indra.assemblers.html.assembler import HtmlAssembler
 
-os.environ["INDRA_DB_REST_URL"] = "https://db.indra.bio"
+os.environ["INDRA_DB_REST_URL"] = "API_ENDPOINT"
 start_time = time.time()
 
 
@@ -66,7 +66,7 @@ def extractFromXML(fileContent, citationCount, term):
         if (len(output.json())>0):
             OC_CITATION_COUNT = (output.json()[0]["citation_count"])
         else:
-            OC_CITATION_COUNT = ""
+            OC_CITATION_COUNT = 0
         
         stmt = indra_db_rest.get_statements_for_paper([('pmid', PMID)]).statements
         # print(citationCount,stmt)
