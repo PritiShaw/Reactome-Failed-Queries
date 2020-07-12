@@ -16,6 +16,8 @@ with open(sys.argv[1]) as f:
             "doi": row["DOI"],
             "citation_count": row["PMC_CITATION_COUNT"],
             "indra_stmt_count": row["INDRA_STATEMENT_COUNT"],
+            "oc_citation_count": row["OC_CITATION_COUNT"],
+            "indra_query_term_stmt_count": row["INDRA_QUERY_TERM_STATEMENT_COUNT"],
             "mesh": []
         }
 
@@ -30,9 +32,10 @@ with open(sys.argv[2]) as mesh:
 with open('final_output.tsv', 'w') as csvfile:
     writer = csv.writer(csvfile, quoting=csv.QUOTE_MINIMAL, delimiter='\t')
     writer.writerow(["QUERY_TERM", "PMID", "JOURNAL_TITLE", "YEAR", "PMCID",
-                     "DOI", "PMC_CITATION_COUNT", "INDRA_STATEMENT_COUNT", "MESH_TERMS"])
+                     "DOI", "PMC_CITATION_COUNT", "INDRA_STATEMENT_COUNT", "OC_CITATION_COUNT", "INDRA_QUERY_TERM_STATEMENT_COUNT", "MESH_TERMS"])
     for key in details:
         print(details[key])
         for term in details[key]:
             writer.writerow([term, key, details[key][term]["journal"], details[key][term]["year"], details[key][term]["pmc"], details[key][term]
-                             ["doi"], details[key][term]["citation_count"], details[key][term]["indra_stmt_count"], "|".join(details[key][term]["mesh"])])
+                             ["doi"], details[key][term]["citation_count"], details[key][term]["indra_stmt_count"], details[key][term]["oc_citation_count"],
+                              details[key][term]["indra_query_term_stmt_count"], "|".join(details[key][term]["mesh"])])
