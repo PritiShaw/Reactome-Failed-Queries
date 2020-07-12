@@ -4,13 +4,47 @@ import time
 import sys
 import csv
 import requests
+import json
 import indra.literature.pubmed_client as parser
 import xml.etree.ElementTree as ET
 from indra.sources import indra_db_rest
 from indra.assemblers.html.assembler import HtmlAssembler
+from urllib.parse import urljoin
+from indra.statements.statements import stmts_to_json
 
 os.environ["INDRA_DB_REST_URL"] = "API_ENDPOINT"
 start_time = time.time()
+
+def citationCount(fileContent):
+    tree = ET.fromstring(fileContent, ET.XMLParser(encoding='utf-8'))
+    ID = tree.findall('./LinkSet/LinkSetDb/Link')
+    return len(ID)
+
+
+def getIndraQueryTermStmtCount(txt,source_apis=None):
+    grounding_service_url = 'http://grounding.indra.bio/'
+    resp = requests.post(urljoin(grounding_service_url, 'ground'), json={'text': txt})
+    grounding_results = resp.json()
+    if len(grounding_results)>0:
+        term_id = grounding_results[0]['term']['id']
+        term_db = grounding_results[0]['term']['db']
+        term = term_id + '@' + term_db
+    else:
+        return 0 
+    stmts = indra_db_rest.get_statements(agents=[term]).statements
+    stmts_json = stmts_to_json(stmts)
+    valid_stmts = set()
+    if source_apis:
+        idx = 0
+        idx2 = 0
+        for stmt in stmts_json:
+        evidences = stmt.get("evidence",[])
+        for ev in evidences:
+            if ev["source_api"] in source_apis:
+            valid_stmts.add(stmts[idx])
+        idx += 1
+        return len(valid_stmts)
+    return len(stmts)
 
 
 def extractFromXML(fileContent, citationCount, term):
@@ -19,7 +53,7 @@ def extractFromXML(fileContent, citationCount, term):
         destCSV = open(destFileName, 'a')
     else:
         destCSV = open(destFileName, 'w')
-        print("PMID,TERM,JOURNAL_TITLE,YEAR,PMCID,DOI,PMC_CITATION_COUNT,INDRA_STATEMENT_COUNT,OC_CITATION_COUNT", file=destCSV)
+        print("PMID,TERM,JOURNAL_TITLE,YEAR,PMCID,DOI,PMC_CITATION_COUNT,INDRA_STATEMENT_COUNT,OC_CITATION_COUNT,INDRA_QUERY_TERM_STATEMENT_COUNT", file=destCSV)
     writer = csv.writer(destCSV, delimiter=',',
                         quotechar='"', quoting=csv.QUOTE_MINIMAL)
     tree = ET.fromstring(fileContent, ET.XMLParser(encoding='utf-8'))
@@ -67,20 +101,14 @@ def extractFromXML(fileContent, citationCount, term):
             OC_CITATION_COUNT = (output.json()[0]["citation_count"])
         else:
             OC_CITATION_COUNT = 0
-        
+
         stmt = indra_db_rest.get_statements_for_paper([('pmid', PMID)]).statements
         # print(citationCount,stmt)
         indra_stmt_count = len(stmt)
         # storing in csv file
-        writer.writerow([PMID, term, title, Year, PMCID, DOI,pmc_citation_count, indra_stmt_count, OC_CITATION_COUNT])
+        writer.writerow([PMID, term, title, Year, PMCID, DOI,pmc_citation_count, indra_stmt_count, OC_CITATION_COUNT,  getIndraQueryTermStmtCount(term)]])
     # Closing file
     destCSV.close()
-
-
-def citationCount(fileContent):
-    tree = ET.fromstring(fileContent, ET.XMLParser(encoding='utf-8'))
-    ID = tree.findall('./LinkSet/LinkSetDb/Link')
-    return len(ID)
 
 
 with open("pmid_list.txt") as f:
