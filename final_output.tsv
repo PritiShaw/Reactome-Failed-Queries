@@ -1,74 +1,190 @@
 QUERY_TERM	PMID	JOURNAL_TITLE	YEAR	PMCID	DOI	PMC_CITATION_COUNT	INDRA_STATEMENT_COUNT	OC_CITATION_COUNT	INDRA_QUERY_TERM_STATEMENT_COUNT	MESH_TERMS
-DMRT1	32628996	Comp. Biochem. Physiol. B, Biochem. Mol. Biol.	2020		10.1016/j.cbpb.2020.110467	0	0	0	278	Humans|Animals|Male|Female|Sex Differentiation|Estradiol|Gonads|Estrogens|Ovary|Feminization|Testis|SOX9 protein, human|SOX9 Transcription Factor|Fishes|Gonadal Steroid Hormones|Disorders of Sex Development
-DMRT1	32590948	BMC Genomics	2020	PMC7318502	10.1186/s12864-020-06852-z	0	0	0	278	Animals|Male|Female|Ducks|Gonads|Gene Expression Profiling|Ovary|Sex Differentiation|Testis|Cell Differentiation|Aquatic Organisms|Gene Expression Regulation
-DMRT1	32497821	Environ. Pollut.	2020		10.1016/j.envpol.2020.114857	0	0	0	278	Animals|Male|Larva|Zebrafish|Ultraviolet Rays|dioxybenzone|Benzophenones|oxybenzone|Gene Expression Profiling|Transcriptome|AHR protein, human|Receptors, Aryl Hydrocarbon|Phenols|Water Pollutants, Chemical|Endocrine System|Sex Differentiation|Xenobiotics|Estradiol|Nervous System|Estrogens
-DMRT1	32447491	Virchows Arch.	2020		10.1007/s00428-020-02843-3	0	0	0	278	Female|Male|Humans|Adult|Adolescent|Middle Aged|Aged|Testis|Comparative Genomic Hybridization|Sex Cord-Gonadal Stromal Tumors|Testicular Neoplasms|Chromosomes|Aneuploidy|Neoplasms, Germ Cell and Embryonal|Immunohistochemistry|Chromosomes, Human, Pair 21|Granulosa Cell Tumor|Ovarian Neoplasms|Spermatocytes|Problem Solving
-DMRT1	32396908	Sex Dev	2020		10.1159/000507838	0	0	0	278	Animals|Male|Female|Forkhead Box Protein L2|Turtles|DMRT1 protein|Sex Determination Processes|Gonads|SOX9 protein, human|SOX9 Transcription Factor|Sex Differentiation|Ovary|Testis|Temperature|Embryo, Nonmammalian|Gene Expression Regulation, Developmental|Biological Phenomena|Amino Acid Sequence|Fluorescent Antibody Technique
-DMRT1	32389707	Gene	2020		10.1016/j.gene.2020.144756	0	0	0	278	Animals|Humans|Female|Male|RNA, Messenger|Transcriptome|Turtles|RNA, Untranslated|RNA, Long Noncoding|Sex Characteristics|MicroRNAs|Gene Expression Profiling|Gene Regulatory Networks|Sex Differentiation|Gene Ontology|RNA, Circular|Asian Continental Ancestry Group|Gonads|Up-Regulation
-DMRT1	32388872	J. Fish Biol.	2020		10.1111/jfb.14366	0	0	0	278	Animals|Female|Male|Ovary|11-ketotestosterone|isinglass|Receptors, Gonadotropin|Testosterone|Forkhead Box Protein L2|Gelatin|Receptors, FSH|Fishes|Sex Differentiation|Oocytes
-DMRT1	32376450	Gene	2020		10.1016/j.gene.2020.144754	0	0	0	278	Animals|Male|Female|DNA Methylation|CpG Islands|Gonads|hydrogen sulfite|Sulfites|Epigenesis, Genetic|Genome|Whole Genome Sequencing|Gene Expression Profiling|Gene Expression|Perciformes|Color
-DMRT1	32282145	Zool. Sci.	2020		10.2108/zs190054	0	0	0	278	Humans
-DMRT1	32268081	Cell Rep	2020		10.1016/j.celrep.2020.03.055	1	0	0	278	Male|Animals|Chick Embryo|Sex Differentiation|Chickens|Transcriptome|Gonads|Sex Determination Processes|Embryo, Mammalian|Testis|Gene Expression Regulation, Developmental|Computational Biology|Transcription Factors|Problem Solving|Vertebrates
-???	32652904	BJS Open	2020		10.1002/bjs5.50320	0	0	0	0	Male|Middle Aged|Humans|Adult|Female|Cytoreduction Surgical Procedures|Peritoneal Neoplasms|Retrospective Studies|Cohort Studies|Hyperthermia, Induced|Peritoneum|Combined Modality Therapy|Colorectal Neoplasms|Health Care Costs|Peritoneal Diseases
-???	32652903	J Diabetes Investig	2020		10.1111/jdi.13356	0	0	0	0	Adult|Humans|Female|Diabetes Mellitus, Type 1|Insulin Infusion Systems|Blood Glucose|Blood Glucose Self-Monitoring|Hypoglycemia|Running|Hypoglycemic Agents|Insulin|Exercise|Hyperglycemia|Fear
-???	32652902	Chem. Biodivers.	2020		10.1002/cbdv.202000526	0	0	0	0	Oils, Volatile|Anti-Bacterial Agents|Microbial Sensitivity Tests|Polypodiaceae|Plant Oils|Staphylococcus aureus|Terpenes|Boron|Gas Chromatography-Mass Spectrometry|Phytol|nonanal|Aldehydes
-???	32652901	J Clin Hypertens (Greenwich)	2020		10.1111/jch.13941	0	0	0	0	Middle Aged|Male|Humans|Female|Blood Pressure|Quality of Life|Hypertension|Antihypertensive Agents|Blood Pressure Determination|Medication Adherence|Risk Factors|Visual Analog Scale|Counseling
-???	32652900	ESC Heart Fail	2020		10.1002/ehf2.12876	0	0	0	0	Male|Humans|Female|Middle Aged|Cardiac Resynchronization Therapy|Stroke Volume|Retrospective Studies|Ventricular Function, Left|Diabetes Mellitus|Heart Failure|Defibrillators, Implantable
-???	32652899	Physiol Rep	2020		10.14814/phy2.14500	0	0	0	0	Humans|MSTN protein, human|Myostatin|Diabetes Mellitus, Type 1|Muscular Atrophy|Muscle, Skeletal|Cachexia|Diagnostic Tests, Routine
-???	32652898	Int Forum Allergy Rhinol	2020		10.1002/alr.22661	0	0	0	0	Humans|Coronavirus|COVID-19|severe acute respiratory syndrome coronavirus 2|Pandemics|Coronavirus Infections|Aerosols|Severe Acute Respiratory Syndrome|SARS Virus|Air Microbiology|Infection Control|Infectious Disease Transmission, Patient-to-Professional|Exhalation
-???	32652897	Microbiologyopen	2020		10.1002/mbo3.1094	0	0	0	0	Animals|Scyphozoa|Ctenophora|RNA, Ribosomal, 16S|Microbiota|Quorum Sensing|Bacteria|Acyl-Butyrolactones|N-octanoylhomoserine lactone|Homoserine|Seawater|homoserine lactone|4-Butyrolactone|Lactones|Cnidaria
-???	32652896	Physiol Rep	2020		10.14814/phy2.14501	0	0	0	0	Mice|Animals|Female|Autoimmunity|Curcumin|Lupus Erythematosus, Systemic|Kidney|Hypertension|Blood Pressure|Kidney Diseases|Albuminuria|Immunosuppressive Agents|Disease Models, Animal|Antioxidants
-???	32652895	Clin Exp Dent Res	2020		10.1002/cre2.301	0	0	0	0	Humans|Histiocytoma, Malignant Fibrous|Sarcoma|Soft Tissue Neoplasms|Mandible|Vimentin|Biomarkers
-PI15	32645918	J Clin Med	2020		10.3390/jcm9072139	0	0	0	30	Male|Humans|Female|Carotid Intima-Media Thickness|Prediabetic State|Prospective Studies|Carotid Artery Diseases|Atherosclerosis|Cohort Studies|Ultrasonography|Plaque, Atherosclerotic|Continental Population Groups|Risk Factors|Prevalence
-PI15	32645888	Genes (Basel)	2020		10.3390/genes11070757	0	0	0	30	Humans|Thymine|Cytosine|Guanine|Myotonic Dystrophy|Trinucleotide Repeat Expansion|Trinucleotide Repeats|Health Services|Research Design
-PI15	32640991	BMC Fam Pract	2020		10.1186/s12875-020-01207-9	0	0	0	30	Humans|Secondary Care|Cross-Sectional Studies|Spain|Physicians|Government Programs|Primary Health Care|Research Personnel|Attitude of Health Personnel|Medical Assistance|Qualitative Research|Surveys and Questionnaires
-PI15	32635473	Cancers (Basel)	2020		10.3390/cancers12071790	0	0	0	30	Mice|Humans|Animals|Neoplasm Recurrence, Local|Carcinoma, Pancreatic Ductal|Neoplastic Stem Cells|Pancreatic Carcinoma|Pancreatic Neoplasms|Pancreas|Xenograft Model Antitumor Assays|Intracellular Membranes|Lysosomes|Gene Expression Regulation, Neoplastic|Biomarkers, Tumor|Disease Models, Animal|Cell Transformation, Neoplastic
-PI15	32607644	J. Neurol.	2020		10.1007/s00415-020-10018-y	0	0	0	30	Male|Humans|Female|carbidopa, levodopa drug combination|Levodopa|Parkinson Disease|Double-Blind Method|Carbidopa|Antiparkinson Agents|Drug Combinations|Administration, Oral|Gels|Cognition
-PI15	32605302	Diagnostics (Basel)	2020		10.3390/diagnostics10070437	0	0	0	30	Middle Aged|Humans|Male|Female|Colorectal Neoplasms|NEUROG1 protein, human|Basic Helix-Loop-Helix Transcription Factors|Nerve Tissue Proteins|Occult Blood|Early Detection of Cancer|Colonic Neoplasms|CpG Islands|Biomarkers, Tumor|DNA Methylation|Sensitivity and Specificity|Feces|Promoter Regions, Genetic|Cohort Studies|Case-Control Studies|Protein Processing, Post-Translational|Adenoma
-PI15	32575903	Cancers (Basel)	2020		10.3390/cancers12061644	0	0	0	30	Humans|Bile|Constriction, Pathologic|Proteomics|Adenocarcinoma|Pancreatic Carcinoma|Pancreatic Neoplasms|Cholangiocarcinoma|Bile Duct Neoplasms|Cholangiopancreatography, Endoscopic Retrograde|Machine Learning|Cholestasis, Extrahepatic|Bile Ducts, Intrahepatic
-PI15	32560448	Int J Environ Res Public Health	2020	PMC7344565	10.3390/ijerph17124334	0	0	0	30	Female|Adult|Male|Middle Aged|Humans|Adiposity|Glycogen Storage Disease Type V|Obesity|Life Style|Sex Characteristics|Body Mass Index|Absorptiometry, Photon|Adipose Tissue|Body Composition|Exercise
-PI15	32545680	Cancers (Basel)	2020		10.3390/cancers12061563	0	0	0	30	Mice|Humans|Animals|fragile histidine triad protein|Acid Anhydride Hydrolases|Neoplasm Proteins|Histocompatibility Antigens Class I|Transfection|Antigen Presentation|Antigens, Neoplasm|Genes, MHC Class I|T-Lymphocytes, Cytotoxic|Vaccines|Cell Line, Tumor|Cell Count|Oncogenes|Immunotherapy
-PI15	32526941	Int J Mol Sci	2020	PMC7312774	10.3390/ijms21114113	0	0	0	30	Humans|Diabetic Nephropathies|Epigenesis, Genetic|Acetylation|DNA Methylation|Histones|Protein Processing, Post-Translational|apabetalone|Quinazolinones|Sodium-Glucose Transporter 2 Inhibitors|Gene Expression Regulation|Protein Domains|Diabetes Mellitus
-PROM1	32646556	Ophthalmol Retina	2020		10.1016/j.oret.2020.02.009	0	0	0	583	Humans|Female|Cone-Rod Dystrophies|Retinitis Pigmentosa|Retinal Cone Photoreceptor Cells|Fundus Oculi|Lipofuscin|Ophthalmoscopy|Pigment Epithelium of Eye|Gastric Fundus
-PROM1	32622311	Transl Oncol	2020	PMC7332530	10.1016/j.tranon.2020.100819	0	0	0	583	Humans|Glioma|Isocitrate Dehydrogenase|Brain Neoplasms|Up-Regulation|Transcriptional Activation|Neural Stem Cells|Mutation|Biomarkers|Codon|CD24 protein, human|CD24 Antigen
-PROM1	32554499	Proc. Natl. Acad. Sci. U.S.A.	2020		10.1073/pnas.1920829117	0	0	0	583	Humans|Nerve Regeneration|Axons|Stem Cells|Peripheral Nerve Injuries|Sciatic Nerve|Biomarkers|Neurons|Gene Expression Regulation
-PROM1	32534057	Gene	2020		10.1016/j.gene.2020.144890	0	0	0	583	Humans|Male|Female|Child|Stargardt Disease|Asian Continental Ancestry Group|Macular Degeneration|Genetic Association Studies|Pedigree|Retinal Dystrophies|ATP-Binding Cassette Transporters|Mutation|High-Throughput Nucleotide Sequencing|Genes, Regulator|BEST1 protein, human|Bestrophins
-PROM1	32460847	Stem Cell Res Ther	2020	PMC7251672	10.1186/s13287-020-01729-0	0	0	0	583	Humans|Human Embryonic Stem Cells|Teratoma|AC133 Antigen|Glycoproteins|Antigens, CD|Neoplastic Stem Cells|Peptides|Pluripotent Stem Cells|RNA, Messenger|Glycosylation|Blastocyst|Biomarkers|Cell Proliferation
-PROM1	32423767	Ophthalmology	2020		10.1016/j.ophtha.2020.04.008	0	0	0	583	Humans|Retinal Diseases|Retina|Cohort Studies|Retinitis Pigmentosa|Pedigree|Eye Proteins|Genotype|High-Throughput Nucleotide Sequencing|Mutation|United Kingdom
-PROM1	32401642	Autophagy	2020		10.1080/15548627.2020.1752548	0	0	0	583	Pregnancy|Female|Humans|Autophagy|Endometrium|Homeostasis|Endometrial Neoplasms
-PROM1	32347296	Biosci. Rep.	2020		10.1042/BSR20200514	0	0	0	583	Child|Humans|Child, Preschool|Female|Precursor Cell Lymphoblastic Leukemia-Lymphoma|Myeloid-Lymphoid Leukemia Protein|Genes, Regulator|Gene Expression Regulation, Leukemic|Gene Rearrangement|Oncogene Proteins, Fusion|Histone-Lysine N-Methyltransferase|Biochemical Phenomena|Gene Ontology|HOXA10 protein, human|Homeobox A10 Proteins|FUT4 protein, human|Fucosyltransferases
-PROM1	32242051	Leukemia	2020		10.1038/s41375-020-0808-y	0	0	0	583	Child|Humans|Infant|Child, Preschool|Neoplastic Stem Cells|Promoter Regions, Genetic|Myeloid-Lymphoid Leukemia Protein|Regulatory Sequences, Nucleic Acid|AC133 Antigen|Oncogene Proteins, Fusion|Genes, Regulator|Gene Expression Regulation, Leukemic|Biomarkers|Cell Line, Tumor|Precursor Cell Lymphoblastic Leukemia-Lymphoma|Methylation|Hematologic Tests|Cell Proliferation|MLL-AF4 fusion protein, human|PROM1 protein, human
-PROM1	32222998	Hepatology	2020		10.1002/hep.31252	0	0	0	583	Humans|Organoids|Biliary Tract|Bile Ducts, Extrahepatic|Bile Ducts, Intrahepatic|Liver|Epithelial Cells
-edil3	32550557	Gene X	2020	PMC7285916	10.1016/j.gene.2020.100031	0	0	0	230	Humans|Mesenchymal Stem Cells|Thy-1 Antigens|Cell Differentiation|Fibroblasts|NT5E protein, human|5'-Nucleotidase|Cells, Cultured|Cell- and Tissue-Based Therapy|Flow Cytometry|Biomarkers|GPI-Linked Proteins
-edil3	32383290	Proteomics	2020		10.1002/pmic.201900289	0	0	0	230	Humans|Male|Semen|Proteomics|Spermatozoa|Seminal Vesicles|Sperm Motility|Epididymis|Extracellular Vesicles|Fertility|Membranes|Cell Membrane|Membrane Proteins|LY6K protein, human|Antigens, Ly|GPI-Linked Proteins
-edil3	32367296	J. Neurol.	2020		10.1007/s00415-020-09865-6	0	0	0	230	Male|Humans|Subarachnoid Hemorrhage|Intracranial Aneurysm|Exome|Risk Factors|Whole Exome Sequencing
-edil3	31869263	Curr. Eye Res.	2019		10.1080/02713683.2019.1656748	0	0	0	230	
-edil3	31817673	Int J Mol Sci	2019	PMC6941134	10.3390/ijms20246162	0	0	0	230	Humans|Female|Triple Negative Breast Neoplasms|Neoplastic Processes|MicroRNAs|Gene Expression Regulation, Neoplastic|Cell Proliferation|Cell Movement|Down-Regulation|MCF-7 Cells|Cell Line, Tumor|Oncogenes|MIRN137 microRNA, human
-edil3	31358619	J. Biol. Chem.	2019	PMC6779430	10.1074/jbc.RA119.009799	0	0	0	230	Animals|Female|Biomineralization|Egg Shell|MFGE8 protein, human|Milk Proteins|Antigens, Surface|Glycoproteins|Avian Proteins|Chickens|Calcification, Physiologic|Eggs|Blister|Choristoma|Proteomics|Minerals
-edil3	31330520	Oncology	2019		10.1159/000501340	0	1	0	230	Humans|Female|Tamoxifen|Antineoplastic Agents, Hormonal|MCF-7 Cells|Drug Resistance, Neoplasm|Gene Expression Regulation, Neoplastic|Cell Line, Tumor|Cell Proliferation|Rare Diseases
-edil3	31110935	J Bone Oncol	2019	PMC6512748	10.1016/j.jbo.2019.100238	0	0	0	230	Mice|Humans|Animals|Female|Osteogenesis|Myeloid-Derived Suppressor Cells|Osteoclasts|Myeloid Cells|Cell Line, Tumor|Myelopoiesis|EDIL3 protein, human|Carrier Proteins
-edil3	30961491	Curr Pharm Biotechnol	2019	PMC6806535	10.2174/1389201020666190408112822	0	0	0	230	Humans|Female|Endometrial Neoplasms|Neovascularization, Pathologic|Carrier Proteins|Biomarkers, Tumor|Gene Expression Regulation, Neoplastic|Extracellular Matrix Proteins|Tumor Microenvironment|EDIL3 protein, human
-edil3	30885428	Trends Mol Med	2019	PMC6488420	10.1016/j.molmed.2019.02.010	7	0	0	230	Humans|Immunologic Factors|Inflammation|Periodontitis|Phagocytosis|Leukocytes|Neutrophils|Integrins|Carrier Proteins
-P12883	10973260	Nat. Genet.	2000		10.1038/79069	45	0	2	0	Humans|Female|MYH9-Related Disorders|Myosin Heavy Chains|Giant Platelet Syndrome with Thrombocytopenia|Thrombocytopenia|Hearing Loss, Sensorineural|Mutation|Molecular Motor Proteins|Blood Platelet Disorders|Genes, Dominant|Blood Platelets|Phenotype|Cytoskeletal Proteins|Syndrome|Pedigree|Genotype|Hematologic Tests|Amino Acid Sequence|Leukocytes
-P12883	8862525	Mol. Biol. Cell	1996	PMC275963	10.1091/mbc.7.7.1123	31	0	1	0	Dictyostelium|Myosins|Actins|Phenotype|Mutagenesis|Amino Acid Sequence|Binding Sites|Mutation|Protein Binding|Mutagenesis, Site-Directed|Models, Molecular|Catalytic Domain|Point Mutation
-P12883	8089177	J. Cell Biol.	1994	PMC2290954	10.1083/jcb.126.6.1445	133	1	2	0	Animals|Rabbits|ezrin|Actins|radixin|Cytoskeletal Proteins|Protein Binding|moesin|Microfilament Proteins|Cytoskeleton|Binding Sites|Phosphoproteins|Amino Acid Sequence|Cell Membrane|Neurofibromin 2|Microtubules|Actin Capping Proteins|Sequence Homology
-Crb2	32545533	Int J Mol Sci	2020		10.3390/ijms21124197	0	0	0	140	Humans|Transgenes|Dependovirus|Eye|Genetic Vectors|Genetic Therapy|Face|Capsid Proteins|Plasmids|Terminal Repeat Sequences|Biological Assay|Promoter Regions, Genetic
-Crb2	32487038	BMC Cancer	2020	PMC7268477	10.1186/s12885-020-07000-2	0	0	0	140	Animals|Middle Aged|Humans|Male|Radium-223|Prostatic Neoplasms|Crows|Androgen Antagonists|Neoplasm Recurrence, Local|Radium|radium Ra 223 dichloride|Radioisotopes|Radiosurgery|Progression-Free Survival|Radiopharmaceuticals
-Crb2	32377352	Hortic Res	2020	PMC7193625	10.1038/s41438-020-0282-8	0	0	0	140	United States|Centers for Medicare and Medicaid Services, U.S.|Cytoplasm|Plant Infertility|Fertility|Health Services|Raphanus|Pollen|Replantation
-Crb2	32272846	Circulation	2020		10.1161/CIRCULATIONAHA.119.043939	0	0	0	140	Humans|Mitral Valve Insufficiency|Myocytes, Cardiac|Heart Valve Diseases|Heart Defects, Congenital|Ventricular Dysfunction, Left|Hypertrophy|Heart Failure
-Crb2	32164628	BMC Public Health	2020	PMC7068979	10.1186/s12889-020-8417-2	0	0	0	140	Humans|South Africa|Anti-HIV Agents|Prisons|HIV Infections|Prisoners
-Crb2	32150534	PLoS Biol.	2020	PMC7108746	10.1371/journal.pbio.3000470	0	0	0	140	Mice|Animals|Cone-Rod Dystrophies|Ventricular Remodeling|NES protein, human|Nestin|Spinal Cord|Cerebral Ventricles|Neuroglia|Astrocytes|Heart Ventricles|Down-Regulation
-Crb2	32051522	J. Hum. Genet.	2020		10.1038/s10038-020-0731-0	0	0	0	140	Pregnancy|Male|Humans|Female|Cystic Kidney Disease with Ventriculomegaly|Preimplantation Diagnosis|Hydrocephalus|Polycystic Kidney Diseases|Nervous System Malformations|Genetic Testing|Prenatal Diagnosis|Mutation|Nephrosis, congenital|Nephrotic Syndrome|Phenotype|Pedigree|Amniotic Fluid|Genetic Counseling
-Crb2	31795518	Genes (Basel)	2019	PMC6947654	10.3390/genes10120987	2	0	0	140	Infant, Newborn|Humans|Retina|Organogenesis|Retinal Degeneration|Eye Proteins|Leber Congenital Amaurosis|Cell Polarity|Nerve Tissue Proteins|Membrane Proteins|Drosophila Proteins|Organoids|Signal Transduction|Fetus|Human Embryonic Stem Cells|Stem Cells
-Crb2	31718797	Biochem. Biophys. Res. Commun.	2019		10.1016/j.bbrc.2019.11.013	1	0	0	140	Mice|Humans|Animals|Vascular Endothelial Growth Factor A|Endothelial Cells|TYRP1 protein, human|Membrane Glycoproteins|Retina|Amaurosis congenita of Leber, type 1|Leber Congenital Amaurosis|Membrane Proteins|Eye Diseases|IgA receptor|Nerve Tissue Proteins|Mutation
-Crb2	31681427	Front Genet	2019	PMC6798392	10.3389/fgene.2019.00993	2	0	0	140	Animals|Transcriptome|Chickens|Ecotype|Kenya|Altitude|Heat-Shock Response|Heat Stress Disorders|Muscle, Skeletal|Biological Phenomena|Gene Expression Profiling|Sequence Analysis, RNA|Heart|Drug Tolerance|Gene Regulatory Networks|Immune Tolerance|Hot Temperature
-P17010	8905149	Biochimie	1996		10.1016/0300-9084(96)84762-6	0	0	0	0	Computers|Sequence Alignment|Databases, Protein|Algorithms|Software|Sequence Analysis|Amino Acid Sequence|Probability|Open Reading Frames
-CHD7	32627857	Prenat. Diagn.	2020		10.1002/pd.5781	0	0	0	406	Pregnancy|Humans|Female|Prospective Studies|Exome|Diagnostic Tests, Routine|Ultrasonography, Prenatal|Whole Exome Sequencing|Abnormalities, Multiple|Fetus|Prenatal Diagnosis|Genetic Testing|Prenatal Care
-CHD7	32625235	Front Genet	2020	PMC7314916	10.3389/fgene.2020.00592	0	0	0	406	Humans|Male|Female|Adult|CHARGE Syndrome|Phenotype|Genotype|Genetic Testing|Mutation|DNA Helicases|Coloboma|Heart Defects, Congenital|DNA-Binding Proteins|Whole Exome Sequencing|CHD7 protein, human
-CHD7	32612575	Front Endocrinol (Lausanne)	2020	PMC7308526	10.3389/fendo.2020.00368	0	0	0	406	
-CHD7	32611869	J Indian Soc Pedod Prev Dent	2020		10.4103/JISPPD.JISPPD_320_19	0	0	0	406	Infant, Newborn|Humans|Female|CHARGE Syndrome|Choanal Atresia|Nipples|Nose|Coloboma|DNA Helicases|Mutation|Phenotype|DNA-Binding Proteins|Genetic Testing
-CHD7	32573075	Mol Genet Genomic Med	2020		10.1002/mgg3.1372	0	0	0	406	Male|Humans|Kallmann Syndrome|DNA Helicases|Hypogonadism|Asian Continental Ancestry Group|Mutation|ACTH Deficiency, Isolated|Endocrine System Diseases|DNA-Binding Proteins|Infertility, Male|Adrenocorticotropic Hormone|Hypoglycemia|CHD7 protein, human
-CHD7	32509017	Exp Ther Med	2020	PMC7271729	10.3892/etm.2020.8683	0	0	0	406	Humans|Female|Infant|CHARGE Syndrome|Agnathia-microstomia-synotia|Jaw Abnormalities|Marcus Gunn phenomenon|Blepharoptosis|Reflex, Abnormal|DNA Helicases|Nervous System Diseases|Mutation|Heart Defects, Congenital|Multiple Pterygium Syndrome, Autosomal Dominant|Arthrogryposis|Microstomia|Ear, External
-CHD7	32502225	PLoS ONE	2020	PMC7274392	10.1371/journal.pone.0234246	0	0	0	406	Pregnancy|Female|Mice|Humans|Infant, Newborn|Animals|Esophageal atresia with or without tracheoesophageal fistula|Esophageal Atresia|Exome|Trichorhinophalangeal Syndrome, Type I|Langer-Giedion Syndrome|Tracheoesophageal Fistula|Hair Diseases|Nose|Fingers|Parturition|Prevalence|TRPS1 protein, human|DNA-Binding Proteins|Transcription Factors|ZFHX3 protein, human|Homeodomain Proteins|CHD7 protein, human|DNA Helicases
-CHD7	32493418	Orphanet J Rare Dis	2020	PMC7268350	10.1186/s13023-020-01421-9	0	0	0	406	Male|Female|Humans|Adult|Autism Spectrum Disorder|Cross-Sectional Studies|CHARGE Syndrome|Autistic Disorder|Diagnostic and Statistical Manual of Mental Disorders|Problem Behavior|Checklist|Risk Factors
-CHD7	32477919	Transl Pediatr	2020	PMC7237969	10.21037/tp.2020.03.09	0	0	0	406	Infant, Newborn|Male|Humans|CHARGE Syndrome|DNA Helicases|Asian Continental Ancestry Group|DNA-Binding Proteins
+PHOX2B	32604166	Am. J. Surg. Pathol.	2020		10.1097/PAS.0000000000001528	0	0	0	355	
+PHOX2B	32594197	Cancer Immunol. Immunother.	2020		10.1007/s00262-020-02652-2	0	0	0	355	
+PHOX2B	32590454	Appl. Immunohistochem. Mol. Morphol.	2020		10.1097/PAI.0000000000000863	0	0	0	355	
+PHOX2B	32497400	Brain Pathol.	2020		10.1111/bpa.12868	0	0	0	355	
+PHOX2B	32468398	Neurosci Bull	2020		10.1007/s12264-020-00519-1	0	0	0	355	
+PHOX2B	32335870	Acta Neurol Belg	2020		10.1007/s13760-020-01363-w	0	0	0	355	
+PHOX2B	32296467	Atlas Genet Cytogenet Oncol Haematol	2020	PMC7158874	10.4267/2042/70771	0	0	0	355	
+PHOX2B	32274237	Case Rep Pediatr	2020	PMC7136801	10.1155/2020/2713606	0	0	0	355	
+PHOX2B	32166324	Endocrinology	2020	PMC7102873	10.1210/endocr/bqaa032	0	0	0	355	
+PHOX2B	32156713	J. Med. Genet.	2020		10.1136/jmedgenet-2019-106601	0	0	0	355	
+kegg	32652857	Environ. Toxicol.	2020		10.1002/tox.22994	0	0	0	0	
+kegg	32652319	EBioMedicine	2020		10.1016/j.ebiom.2020.102878	0	0	0	0	
+kegg	32651991	Aging (Albany NY)	2020		10.18632/aging.103602	0	0	0	0	
+kegg	32651898	Reprod Sci	2020		10.1007/s43032-020-00148-z	0	0	0	0	
+kegg	32651427	Sci Rep	2020		10.1038/s41598-020-68224-7	0	0	0	0	
+kegg	32651353	Med. Sci. Monit.	2020		10.12659/MSM.924334	0	0	0	0	
+kegg	32650679	Autoimmunity	2020		10.1080/08916934.2020.1786069	0	0	0	0	
+kegg	32650100	Genomics	2020		10.1016/j.ygeno.2020.07.011	0	0	0	0	
+kegg	32650094	Genomics	2020		10.1016/j.ygeno.2020.07.004	0	0	0	0	
+kegg	32649966	Toxicol. Lett.	2020		10.1016/j.toxlet.2020.07.007	0	0	0	0	
+HOTAIR	32650779	Cell Commun. Signal	2020		10.1186/s12964-020-00602-0	0	0	0	1465	
+HOTAIR	32650720	BMC Mol Cell Biol	2020		10.1186/s12860-020-00299-6	0	0	0	1465	
+HOTAIR	32602030	J. Mol. Neurosci.	2020		10.1007/s12031-020-01623-7	0	0	0	1465	
+HOTAIR	32601922	Mol. Biol. Rep.	2020		10.1007/s11033-020-05609-x	0	0	0	1465	
+HOTAIR	32583079	Gastric Cancer	2020		10.1007/s10120-020-01091-3	0	0	0	1465	
+HOTAIR	32582996	Mol Med Rep	2020		10.3892/mmr.2020.11268	0	0	0	1465	
+HOTAIR	32566019	Oncol Lett	2020	PMC7285833	10.3892/ol.2020.11620	0	0	0	1465	
+HOTAIR	32554864	Aging (Albany NY)	2020		10.18632/aging.103355	0	0	0	1465	
+HOTAIR	32529678	J. Cell. Physiol.	2020		10.1002/jcp.29825	0	0	0	1465	
+pca3	32630458	Biomedicines	2020		10.3390/biomedicines8060173	0	0	0	0	
+pca3	32539255	Int Braz J Urol	2020		10.1590/S1677-5538.IBJU.2019.0521	0	0	0	0	
+pca3	32398974	EXCLI J	2020	PMC7214775	10.17179/excli2020-1036	0	0	0	0	
+pca3	32388776	Endocr. Pathol.	2020		10.1007/s12022-020-09626-1	0	0	0	0	
+pca3	32388502	Urol. Int.	2020		10.1159/000506885	0	0	0	0	
+pca3	32280028	Clin Genitourin Cancer	2020		10.1016/j.clgc.2020.03.005	0	0	0	0	
+pca3	32256177	Saudi J Biol Sci	2020	PMC7105665	10.1016/j.sjbs.2020.02.003	0	0	0	0	
+pca3	32250729	J. Urol.	2020		10.1097/JU.0000000000001066	0	0	0	0	
+pca3	32241692	Urol. Oncol.	2020		10.1016/j.urolonc.2020.02.018	0	0	0	0	
+pca3	32228431	Anticancer Agents Med Chem	2020		10.2174/1871520620666200331102609	0	0	0	0	
+FLCN	32642019	Radiol Case Rep	2020	PMC7334545	10.1016/j.radcr.2020.05.049	0	0	0	582	
+FLCN	32631372	Orphanet J Rare Dis	2020	PMC7336475	10.1186/s13023-020-01448-y	0	0	0	582	
+FLCN	32612235	Nature	2020		10.1038/s41586-020-2444-0	0	0	0	582	
+FLCN	32607581	J. Neuropathol. Exp. Neurol.	2020		10.1093/jnen/nlaa052	0	0	0	582	
+FLCN	32537432	Front Oncol	2020	PMC7269128	10.3389/fonc.2020.00818	0	0	0	582	
+FLCN	32469710	Respir Med	2020		10.1016/j.rmed.2020.105995	0	0	0	582	
+FLCN	32448321	Orphanet J Rare Dis	2020	PMC7245949	10.1186/s13023-020-01402-y	0	0	0	582	
+FLCN	32420021	Respir Med Case Rep	2020	PMC7218215	10.1016/j.rmcr.2020.101081	0	0	0	582	
+FLCN	32398770	Genet. Med.	2020		10.1038/s41436-020-0816-3	0	0	0	582	
+FLCN	32327294	Urol. Oncol.	2020		10.1016/j.urolonc.2020.03.016	0	0	0	582	
+POSTN	32647988	World J Surg	2020		10.1007/s00268-020-05586-z	0	0	0	3064	
+POSTN	32647861	J. Neuropathol. Exp. Neurol.	2020		10.1093/jnen/nlaa067	0	0	0	3064	
+POSTN	32642695	Neurooncol Adv	2020	PMC7276933	10.1093/noajnl/vdaa040	0	0	0	3064	
+POSTN	32637906	JHEP Rep	2020	PMC7330160	10.1016/j.jhepr.2020.100115	0	0	0	3064	
+POSTN	32627156	Ginekol. Pol.	2020		10.5603/GP.2020.0064	0	0	0	3064	
+POSTN	32613365	Ann. Surg. Oncol.	2020		10.1245/s10434-020-08765-3	0	0	0	3064	
+POSTN	32611237	Circ. Res.	2020		10.1161/CIRCRESAHA.119.315999	0	0	0	3064	
+POSTN	32579471	Autophagy	2020		10.1080/15548627.2020.1778292	0	0	0	3064	
+POSTN	32510239	Cell Transplant	2020		10.1177/0963689720933241	0	0	0	3064	
+POSTN	32461137	Mol. Cell. Probes	2020		10.1016/j.mcp.2020.101596	0	0	0	3064	
+chd2	32609087	Elife	2020		10.7554/eLife.55775	0	0	0	105	
+chd2	32598477	Blood Adv	2020		10.1182/bloodadvances.2019001350	0	0	0	105	
+chd2	32593896	Epilepsy Res.	2020		10.1016/j.eplepsyres.2020.106398	0	0	0	105	
+chd2	32573645	Org. Biomol. Chem.	2020		10.1039/d0ob01054e	0	0	0	105	
+chd2	32483190	Sci Rep	2020	PMC7264272	10.1038/s41598-020-65839-8	0	0	0	105	
+chd2	32170405	Childs Nerv Syst	2020		10.1007/s00381-020-04558-x	1	0	0	105	
+chd2	32061754	Cancer Lett.	2020		10.1016/j.canlet.2020.02.001	0	0	0	105	
+chd2	31993582	Epilepsy Behav Rep	2020	PMC6976925	10.1016/j.ebr.2019.100355	0	0	0	105	
+chd2	31914951	BMC Med. Genet.	2020	PMC6950831	10.1186/s12881-019-0946-0	0	0	0	105	
+chd2	31904125	Epilepsia	2020		10.1111/epi.16054	0	0	0	105	
+SBDS	32625236	Front Genet	2020	PMC7311772	10.3389/fgene.2020.00631	0	0	0	182	
+SBDS	32621606	Nucleic Acids Res.	2020		10.1093/nar/gkaa574	0	0	0	182	
+SBDS	32599702	Micromachines (Basel)	2020	PMC7345170	10.3390/mi11060609	0	0	0	182	
+SBDS	32558377	Arthritis Care Res (Hoboken)	2020		10.1002/acr.24355	0	0	0	182	
+SBDS	32549787	Cancer Cell Int.	2020	PMC7294624	10.1186/s12935-020-01317-5	0	0	0	182	
+SBDS	32443764	Micromachines (Basel)	2020	PMC7281217	10.3390/mi11050519	0	0	0	182	
+SBDS	32412173	Am. J. Med. Genet. A	2020		10.1002/ajmg.a.61598	0	0	0	182	
+SBDS	32293785	Am. J. Med. Genet. A	2020		10.1002/ajmg.a.61593	0	0	0	182	
+SBDS	32198344	Cell Death Dis	2020	PMC7083877	10.1038/s41419-020-2393-4	1	0	0	182	
+A8K2U0	30657212	Skin Res Technol	2019		10.1111/srt.12668	0	0	0	0	
+mnx1	32615233	Neuroscience	2020		10.1016/j.neuroscience.2020.06.028	0	0	0	116	
+mnx1	32571425	Orphanet J Rare Dis	2020	PMC7310025	10.1186/s13023-020-01442-4	0	0	0	116	
+mnx1	32460659	Zebrafish	2020		10.1089/zeb.2019.1777	0	0	0	116	
+mnx1	32117046	Front Endocrinol (Lausanne)	2020	PMC7010808	10.3389/fendo.2019.00934	0	0	0	116	
+mnx1	31924214	Mol. Cancer	2020	PMC6953272	10.1186/s12943-019-1104-1	3	0	0	116	
+mnx1	31903751	J. Agric. Food Chem.	2020		10.1021/acs.jafc.9b07151	0	0	0	116	
+mnx1	31847880	J Hematol Oncol	2019	PMC6918594	10.1186/s13045-019-0826-2	1	0	0	116	
+mnx1	31843814	J. Pharmacol. Exp. Ther.	2019		10.1124/jpet.119.262949	0	0	0	116	
+mnx1	31730496	Orphanet J Rare Dis	2019	PMC6858688	10.1186/s13023-019-1208-0	0	0	0	116	
+mnx1	31726413	Sci. Total Environ.	2019		10.1016/j.scitotenv.2019.134870	0	0	0	116	
+Dlx1	32553154	Cell Rep	2020		10.1016/j.celrep.2020.107778	0	0	0	168	
+Dlx1	32508046	Clin Transl Med	2020		10.1002/ctm2.29	0	0	0	168	
+Dlx1	32403166	Dev. Growth Differ.	2020		10.1111/dgd.12671	0	0	0	168	
+Dlx1	32368149	Cancer Manag Res	2020	PMC7185642	10.2147/CMAR.S239796	0	0	0	168	
+Dlx1	32253239	Development	2020		10.1242/dev.180067	1	0	0	168	
+Dlx1	32170006	Proc. Natl. Acad. Sci. U.S.A.	2020	PMC7132256	10.1073/pnas.1921007117	0	0	0	168	
+Dlx1	32021296	Onco Targets Ther	2020	PMC6974148	10.2147/OTT.S221276	0	0	0	168	
+Dlx1	32017713	JCI Insight	2020	PMC7101142	10.1172/jci.insight.131494	0	0	0	168	
+Dlx1	31922317	Cell Prolif.	2020	PMC7048213	10.1111/cpr.12758	2	0	0	168	
+Dlx1	31882504	In Vivo	2019	PMC6984119	10.21873/invivo.11786	0	0	0	168	
+LZTR1	32642684	Neurooncol Adv	2020	PMC7212860	10.1093/noajnl/vdaa023	0	0	0	108	
+LZTR1	32623905	Circulation	2020		10.1161/CIRCULATIONAHA.119.044794	0	0	0	108	
+LZTR1	32576656	J. Med. Genet.	2020		10.1136/jmedgenet-2020-107022	0	0	0	108	
+LZTR1	32575496	Genes (Basel)	2020		10.3390/genes11060671	0	0	0	108	
+LZTR1	32514133	Eur. J. Hum. Genet.	2020		10.1038/s41431-020-0658-0	0	0	0	108	
+LZTR1	32339168	PLoS Genet.	2020	PMC7205319	10.1371/journal.pgen.1008727	0	0	0	108	
+LZTR1	32281771	Clin. Orthop. Relat. Res.	2020		10.1097/CORR.0000000000001239	0	0	0	108	
+LZTR1	32271143	Clin. Neuropathol.	2020		10.5414/NP301245	1	0	0	108	
+LZTR1	32175818	Circ. Res.	2020		10.1161/CIRCRESAHA.119.315730	1	0	0	108	
+LZTR1	31983691	No Shinkei Geka	2020		10.11477/mf.1436204137	0	0	0	108	
+piezo1	32640190	Cell	2020		10.1016/j.cell.2020.06.022	0	0	0	464	
+piezo1	32636802	Front Endocrinol (Lausanne)	2020	PMC7318866	10.3389/fendo.2020.00356	0	0	0	464	
+piezo1	32599305	J Vasc Surg Venous Lymphat Disord	2020		10.1016/j.jvsv.2020.06.009	0	0	0	464	
+piezo1	32582958	J. Gen. Physiol.	2020		10.1085/jgp.201912515	0	0	0	464	
+piezo1	32581839	Front Physiol	2020	PMC7297144	10.3389/fphys.2020.00544	0	0	0	464	
+piezo1	32579474	Am. J. Physiol., Cell Physiol.	2020		10.1152/ajpcell.00210.2020	0	0	0	464	
+piezo1	32547190	Cancer Manag Res	2020	PMC7244349	10.2147/CMAR.S251776	0	0	0	464	
+piezo1	32526681	Int. Immunopharmacol.	2020		10.1016/j.intimp.2020.106681	0	0	0	464	
+piezo1	32523536	Front Pharmacol	2020	PMC7261832	10.3389/fphar.2020.00768	0	0	0	464	
+piezo1	32499717	Front Physiol	2020	PMC7243936	10.3389/fphys.2020.00457	0	0	0	464	
+SETBP1	32573691	Blood	2020		10.1182/blood.2019004229	0	0	0	1118	
+SETBP1	32560455	Cancers (Basel)	2020		10.3390/cancers12061603	0	0	0	1118	
+SETBP1	32536134	Zhonghua Xue Ye Xue Za Zhi	2020		10.3760/cma.j.issn.0253-2727.2020.05.004	0	0	0	1118	
+SETBP1	32461631	Leukemia	2020		10.1038/s41375-020-0872-3	0	0	0	1118	
+SETBP1	32460983	Best Pract Res Clin Haematol	2020		10.1016/j.beha.2020.101171	0	0	0	1118	
+SETBP1	32460883	Ital J Pediatr	2020	PMC7254667	10.1186/s13052-020-00839-y	0	0	0	1118	
+SETBP1	32457837	Front Oncol	2020	PMC7225304	10.3389/fonc.2020.00640	0	0	0	1118	
+SETBP1	32445275	Am. J. Med. Genet. A	2020		10.1002/ajmg.a.61630	0	0	0	1118	
+SETBP1	32345733	Neurology	2020		10.1212/WNL.0000000000009441	0	0	0	1118	
+SETBP1	32324324	New Dir Child Adolesc Dev	2020		10.1002/cad.20331	0	0	0	1118	
+NCOA4	32608971	Biochemistry	2020		10.1021/acs.biochem.0c00246	0	0	0	263	
+NCOA4	32606852	Diabetes Metab Syndr Obes	2020	PMC7294720	10.2147/DMSO.S249382	0	0	0	263	
+NCOA4	32283200	Food Chem. Toxicol.	2020		10.1016/j.fct.2020.111329	0	0	0	263	
+NCOA4	32256964	Oxid Med Cell Longev	2020	PMC7091554	10.1155/2020/9762390	0	0	0	263	
+NCOA4	32186434	Autophagy	2020		10.1080/15548627.2020.1739447	1	0	0	263	
+NCOA4	32162306	J. Pathol.	2020		10.1002/path.5418	0	0	0	263	
+NCOA4	32107334	Haematologica	2020		10.3324/haematol.2019.241232	0	0	0	263	
+NCOA4	31880208	Autophagy	2019		10.1080/15548627.2019.1709764	1	0	0	263	
+NCOA4	31715421	Cancer Treat. Rev.	2019		10.1016/j.ctrv.2019.101911	4	0	0	263	
+NCOA4	31697865	APMIS	2019		10.1111/apm.13009	1	0	0	263	
+ELF5	32284542	Nat. Cell Biol.	2020		10.1038/s41556-020-0495-y	0	0	0	292	
+ELF5	32269277	Sci Rep	2020	PMC7142143	10.1038/s41598-020-63023-6	0	0	0	292	
+ELF5	32213656	Reproduction	2020	PMC7241298	10.1530/REP-20-0108	0	0	0	292	
+ELF5	32196521	PLoS ONE	2020	PMC7083332	10.1371/journal.pone.0230313	0	0	0	292	
+ELF5	32096174	Eur Rev Med Pharmacol Sci	2020		10.26355/eurrev_202002_20154	0	0	0	292	
+ELF5	32056544	Placenta	2020		10.1016/j.placenta.2019.12.017	0	0	0	292	
+ELF5	31993168	Food Sci Nutr	2020	PMC6977417	10.1002/fsn3.1326	0	0	0	292	
+ELF5	31966058	Oncol Lett	2020	PMC6956397	10.3892/ol.2019.11213	0	0	0	292	
+ELF5	31895944	PLoS Genet.	2020	PMC6959601	10.1371/journal.pgen.1008531	0	0	0	292	
+ELF5	31861377	Cancers (Basel)	2019	PMC7017076	10.3390/cancers12010006	2	0	0	292	
+TMC1	32493795	Sci Transl Med	2020		10.1126/scitranslmed.aay9101	0	0	0	66	
+TMC1	32371604	J. Neurosci.	2020	PMC7275854	10.1523/JNEUROSCI.0163-20.2020	0	0	0	66	
+TMC1	32343945	Neuron	2020	PMC7351599	10.1016/j.neuron.2020.03.033	0	0	0	66	
+TMC1	32325031	Neuron	2020		10.1016/j.neuron.2020.03.026	0	0	0	66	
+TMC1	32225107	Int J Mol Sci	2020	PMC7177576	10.3390/ijms21072300	0	0	0	66	
+TMC1	32219816	Zhonghua Yi Xue Yi Chuan Xue Za Zhi	2020		10.3760/cma.j.issn.1003-9406.2020.04.003	0	0	0	66	
+TMC1	32167554	Hum. Mol. Genet.	2020		10.1093/hmg/ddaa045	1	0	0	66	
+TMC1	32152768	J. Assoc. Res. Otolaryngol.	2020	PMC7270392	10.1007/s10162-020-00746-3	0	0	0	66	
+TMC1	32009898	Front Mol Neurosci	2020	PMC6974483	10.3389/fnmol.2019.00320	0	0	0	66	
+Pl15	31624143	J. Biol. Chem.	2019	PMC6885643	10.1074/jbc.RA119.010716	0	0	0	0	
+Pl15	31448186	3 Biotech	2019	PMC6691017	10.1007/s13205-019-1857-7	0	0	0	0	
+Pl15	31426338	Int J Mol Sci	2019	PMC6720513	10.3390/ijms20163995	0	0	0	0	
+Pl15	28194945	Anal. Chem.	2017		10.1021/acs.analchem.6b04202	1	0	0	0	
+Pl15	28094156	Waste Manag	2017		10.1016/j.wasman.2016.12.032	0	0	0	0	
+Pl15	27837974	J. Dairy Sci.	2016		10.3168/jds.2016-11479	4	0	0	0	
+Pl15	27179857	J. Dairy Sci.	2016		10.3168/jds.2015-10445	2	0	0	0	
+Pl15	26931652	Methods	2016	PMC4854231	10.1016/j.ymeth.2016.02.017	34	0	2	0	
+Pl15	26365535	Nat Commun	2015	PMC4579568	10.1038/ncomms9179	26	3	2	0	
+Pl15	23577162	PLoS ONE	2013	PMC3618293	10.1371/journal.pone.0060802	18	0	4	0	
+FUBP1	32555178	Cell Death Dis	2020	PMC7303217	10.1038/s41419-020-2674-y	0	0	0	327	
+FUBP1	32481602	Cells	2020		10.3390/cells9061347	0	0	0	327	
+FUBP1	32433053	Chin. Med. J.	2020	PMC7249703	10.1097/CM9.0000000000000758	0	0	0	327	
+FUBP1	32339054	Int. J. Biol. Markers	2020		10.1177/1724600820912252	0	0	0	327	
+FUBP1	31870915	J. Am. Acad. Dermatol.	2019		10.1016/j.jaad.2019.12.026	0	0	0	327	
+FUBP1	31587040	Carcinogenesis	2019		10.1093/carcin/bgz171	0	11	0	327	
+FUBP1	31553912	Cell Rep	2019	PMC7297508	10.1016/j.celrep.2019.08.060	1	0	0	327	
+FUBP1	31535751	Cell Biol. Int.	2019		10.1002/cbin.11242	0	3	0	327	
+FUBP1	31511046	J. Exp. Clin. Cancer Res.	2019	PMC6737630	10.1186/s13046-019-1414-6	1	2	0	327	
+FUBP1	31467227	Cancer Genomics Proteomics	2019	PMC6727075	10.21873/cgp.20138	0	0	0	327	
+SIL1	32502168	PLoS ONE	2020	PMC7274380	10.1371/journal.pone.0234132	0	0	0	203	
+SIL1	31900673	Clin Oral Investig	2020		10.1007/s00784-019-03136-z	0	0	0	203	
+SIL1	31834482	Plant Cell Rep.	2019		10.1007/s00299-019-02498-8	0	0	0	203	
+SIL1	31791191	Sci Prog	2019		10.1177/0036850419891046	0	6	0	203	
+SIL1	31701543	Neuropathol. Appl. Neurobiol.	2019		10.1111/nan.12588	0	2	0	203	
+SIL1	31531014	Neural Plast.	2019	PMC6720716	10.1155/2019/9653024	0	8	0	203	
+SIL1	31258504	Front Neurol	2019	PMC6587064	10.3389/fneur.2019.00562	0	1	0	203	
+SIL1	30468864	Neurobiol. Dis.	2018		10.1016/j.nbd.2018.11.019	0	1	0	203	
+HOTAIR	32529986	J. Genet.	2020			0	0	0	1465	
+SBDS	32434641	Zhongguo Dang Dai Er Ke Za Zhi	2020			0	0	0	182	
+TMC1	32048492	Harefuah	2020			0	0	0	66	

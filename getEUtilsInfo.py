@@ -95,13 +95,11 @@ def extractFromXML(fileContent, citationCount, term):
         article_type = pubType or ""
         article_topics = topics_string or ""
         pmc_citation_count = citationCount
-        
-        output= requests.get("https://opencitations.net/api/v1/metadata/"+ DOI)
-        if (len(output.json())>0):
-            OC_CITATION_COUNT = (output.json()[0]["citation_count"])
-        else:
-            OC_CITATION_COUNT = 0
-
+        OC_CITATION_COUNT = 0
+        if DOI != "":
+            output= requests.get("https://opencitations.net/api/v1/metadata/"+ DOI).json()
+            if len(output) > 0:
+                OC_CITATION_COUNT = output[0]["citation_count"]
         stmt = indra_db_rest.get_statements_for_paper([('pmid', PMID)]).statements
         # print(citationCount,stmt)
         indra_stmt_count = len(stmt)
