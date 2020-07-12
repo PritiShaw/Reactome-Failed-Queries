@@ -38,11 +38,11 @@ def getIndraQueryTermStmtCount(txt,source_apis=None):
         idx = 0
         idx2 = 0
         for stmt in stmts_json:
-        evidences = stmt.get("evidence",[])
-        for ev in evidences:
-            if ev["source_api"] in source_apis:
-            valid_stmts.add(stmts[idx])
-        idx += 1
+            evidences = stmt.get("evidence",[])
+            for ev in evidences:
+                if ev["source_api"] in source_apis:
+                    valid_stmts.add(stmts[idx])
+            idx += 1
         return len(valid_stmts)
     return len(stmts)
 
