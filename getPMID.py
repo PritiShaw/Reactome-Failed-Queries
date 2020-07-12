@@ -2,7 +2,7 @@ import requests
 import json
 import xml.etree.ElementTree as ET
 
-term_limit = 10
+term_limit = 30
 pmid_per_term_limit = 10
 
 
