@@ -12,7 +12,7 @@ from indra.assemblers.html.assembler import HtmlAssembler
 from urllib.parse import urljoin
 from indra.statements.statements import stmts_to_json
 
-os.environ["INDRA_DB_REST_URL"] = "API_ENDPOINT"
+os.environ["INDRA_DB_REST_URL"] = "https://db.indra.bio"
 start_time = time.time()
 
 def citationCount(fileContent):

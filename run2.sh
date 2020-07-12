@@ -1,4 +1,4 @@
-python3 mergeOutputs.py
+python3 mergeOutputs.py /mnt/e/GSoC20/Reactome-Failed-Queries/eutils_output.csv /mnt/e/GSoC20/Reactome-Failed-Queries/text.out
 mkdir Output_Batch1
 mv pmid-list.txt Output_Batch1
 mv eutils_output.csv Output_Batch1
