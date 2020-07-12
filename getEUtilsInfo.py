@@ -106,7 +106,7 @@ def extractFromXML(fileContent, citationCount, term):
         # print(citationCount,stmt)
         indra_stmt_count = len(stmt)
         # storing in csv file
-        writer.writerow([PMID, term, title, Year, PMCID, DOI,pmc_citation_count, indra_stmt_count, OC_CITATION_COUNT,  getIndraQueryTermStmtCount(term)]])
+        writer.writerow([PMID, term, title, Year, PMCID, DOI,pmc_citation_count, indra_stmt_count, OC_CITATION_COUNT,  getIndraQueryTermStmtCount(term)])
     # Closing file
     destCSV.close()
 
