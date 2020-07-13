@@ -37,7 +37,6 @@ def mergeOutputs(path_eutils, path_mesh, path_output_dir):
         writer.writerow(["QUERY_TERM", "PMID", "JOURNAL_TITLE", "YEAR", "PMCID",
                          "DOI", "PMC_CITATION_COUNT", "INDRA_STATEMENT_COUNT", "OC_CITATION_COUNT", "INDRA_QUERY_TERM_STATEMENT_COUNT", "MESH_TERMS"])
         for key in details:
-            print(details[key])
             for term in details[key]:
                 writer.writerow([term, key, details[key][term]["journal"], details[key][term]["year"], details[key][term]["pmc"], details[key][term]
                                  ["doi"], details[key][term]["citation_count"], details[key][term][

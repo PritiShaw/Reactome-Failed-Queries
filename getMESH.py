@@ -33,9 +33,9 @@ def getAbstracts():
                                 'AB  - ', abstract_text.encode("ascii", "ignore"), file=o)
                             print("\n", file=o)
                         else:
-                            print("Err: ", "Undefined Abstract")
+                            print("Err: MESH: ", "Undefined Abstract")
                     except Exception as e:
-                        print("Err: ", e)
+                        print("Err: MESH: ", e)
 
 def getMESH():
     getAbstracts()

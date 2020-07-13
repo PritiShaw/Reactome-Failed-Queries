@@ -16,10 +16,12 @@ os.environ["INDRA_DB_REST_URL"] = "https://db.indra.bio"
 
 
 def citationCount(fileContent):
-    tree = ET.fromstring(fileContent, ET.XMLParser(encoding='utf-8'))
-    ID = tree.findall('./LinkSet/LinkSetDb/Link')
-    return len(ID)
-
+    try:
+        tree = ET.fromstring(fileContent, ET.XMLParser(encoding='utf-8'))
+        ID = tree.findall('./LinkSet/LinkSetDb/Link')
+        return len(ID)
+    except:
+        return 0
 
 def getIndraQueryTermStmtCount(txt, source_apis=None):
     grounding_service_url = 'http://grounding.indra.bio/'
@@ -75,7 +77,7 @@ def extractFromXML(fileContent, citationCount, term):
                 topics.append(topic.find('DescriptorName').text)
             topics_string = ' , '.join(topics)
         except Exception as err:
-            print(err)
+            print("Err: EUtils:", err)
             continue
         # Add the Publication date from Journal info
 
@@ -144,4 +146,4 @@ def getEUtilsInfo():
 
                 extractFromXML(xmlContent.text, count, term)
             except Exception as e:
-                print("Err: ", e, line)
+                print("Err: EUtils: ", e, line)
