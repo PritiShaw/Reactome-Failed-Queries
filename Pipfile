@@ -10,6 +10,7 @@ autopep8 = "*"
 [packages]
 requests = "*"
 indra = "*"
+tqdm = "*"
 
 [requires]
 python_version = "3.8"

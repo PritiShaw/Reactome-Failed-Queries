@@ -1,11 +1,13 @@
 import requests
+import os
+
 from urllib.request import urlopen
 from xml.etree.ElementTree import parse
 
 
 def getAbstracts():
     with open("pmid_list.txt") as file:
-        with open('abstract.txts', 'w') as o:
+        with open('abstract.txt', 'w') as o:
             for inp in file:
                 pmid = inp.strip().split("~")[0]
                 var_url = urlopen(
@@ -28,3 +30,8 @@ def getAbstracts():
                             print("Err: ", "Undefined Abstract")
                     except Exception as e:
                         print("Err: ", e)
+
+def getMESH():
+    getAbstracts()
+    os.system("bash handleMTI.sh >> mesh.txt")
+    

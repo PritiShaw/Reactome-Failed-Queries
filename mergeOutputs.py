@@ -43,7 +43,3 @@ def mergeOutputs(path_eutils, path_mesh, path_output_dir):
                                  ["doi"], details[key][term]["citation_count"], details[key][term][
                     "indra_stmt_count"], details[key][term]["oc_citation_count"],
                     details[key][term]["indra_query_term_stmt_count"], "|".join(details[key][term]["mesh"])])
-
-    with open(os.path.join(path_output_dir, "history"),"a") as out_file:
-        with open('pmid_list.txt') as in_file:
-            out_file.writelines(in_file.readlines())

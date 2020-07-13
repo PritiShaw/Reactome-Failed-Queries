@@ -10,13 +10,8 @@ def _extractListID(filecontent, term):
         for i in ID:
             print(i.text + "~" + term, file=op_file)
 
-
-terms_request = requests.get(
-    "https://raw.githubusercontent.com/cannin/reach-query/master/queries.csv")
-terms = terms_request.text
-
-def getTerms(term_start, term_end):
-    for term in terms.splitlines()[term_start:(term_end+1)]:
+def getPMID(terms):
+    for term in terms:
         term = term.strip().rpartition(",")[0]
         xml_content = requests.get(
             "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=hasabstract%20AND%20"+term)
