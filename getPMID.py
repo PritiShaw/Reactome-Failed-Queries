@@ -19,7 +19,8 @@ def getPMID(terms):
             try:
                 xml_content = requests.get(
                 "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=hasabstract%20AND%20"+term)
+                _extractListID(xml_content.text, term)
                 flag = False
             except:
                 time.sleep(.5)
-        _extractListID(xml_content.text, term)
+

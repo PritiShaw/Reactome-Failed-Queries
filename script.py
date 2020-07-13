@@ -26,7 +26,7 @@ if __name__ == "__main__":
     for term in inp_terms[1:]:
         if term not in history:
             terms[-1].append(term)
-            if len(terms[-1])==10:
+            if len(terms[-1])==5:
                 terms.append([])
 
     for chunk in tqdm(terms):

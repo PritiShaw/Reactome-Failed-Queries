@@ -1,5 +1,6 @@
 import requests
 import os
+import time
 
 from urllib.request import urlopen
 from xml.etree.ElementTree import parse
@@ -10,8 +11,13 @@ def getAbstracts():
         with open('abstract.txt', 'w') as o:
             for inp in file:
                 pmid = inp.strip().split("~")[0]
-                var_url = urlopen(
-                    f'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id={pmid}')
+                flag = True
+                while flag:
+                    try:
+                        var_url = urlopen(f'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id={pmid}')
+                        flag = False
+                    except:
+                        time.sleep(.5)
                 xmldoc = parse(var_url)
                 for item in xmldoc.iterfind('PubmedArticle'):
                     try:
