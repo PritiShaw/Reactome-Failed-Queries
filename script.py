@@ -11,7 +11,7 @@ from mergeOutputs import mergeOutputs
 
 def saveInHistory(terms):
     with open("./processor/history", "a") as out_file:
-        out_file.writelines(terms)
+        out_file.write('\n'.join(terms))
 
 
 if __name__ == "__main__":
@@ -23,7 +23,7 @@ if __name__ == "__main__":
         for line in history_file:
             history.add(line.trim())
     terms = [[]]
-    for term in inp_terms:
+    for term in inp_terms[1:]:
         if term not in history:
             terms[-1].append(term)
             if len(terms[-1])==10:
@@ -43,3 +43,4 @@ if __name__ == "__main__":
         history.update(chunk)        
         saveInHistory(chunk)
         os.system("bash handleGit.sh")
+        os.system("bash cleanup.sh")
