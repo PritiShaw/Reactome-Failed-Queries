@@ -13,7 +13,7 @@ from urllib.parse import urljoin
 from indra.statements.statements import stmts_to_json
 
 os.environ["INDRA_DB_REST_URL"] = "https://db.indra.bio"
-start_time = time.time()
+
 
 def citationCount(fileContent):
     tree = ET.fromstring(fileContent, ET.XMLParser(encoding='utf-8'))
@@ -21,16 +21,17 @@ def citationCount(fileContent):
     return len(ID)
 
 
-def getIndraQueryTermStmtCount(txt,source_apis=None):
+def getIndraQueryTermStmtCount(txt, source_apis=None):
     grounding_service_url = 'http://grounding.indra.bio/'
-    resp = requests.post(urljoin(grounding_service_url, 'ground'), json={'text': txt})
+    resp = requests.post(urljoin(grounding_service_url,
+                                 'ground'), json={'text': txt})
     grounding_results = resp.json()
-    if len(grounding_results)>0:
+    if len(grounding_results) > 0:
         term_id = grounding_results[0]['term']['id']
         term_db = grounding_results[0]['term']['db']
         term = term_id + '@' + term_db
     else:
-        return 0 
+        return 0
     stmts = indra_db_rest.get_statements(agents=[term]).statements
     stmts_json = stmts_to_json(stmts)
     valid_stmts = set()
@@ -38,7 +39,7 @@ def getIndraQueryTermStmtCount(txt,source_apis=None):
         idx = 0
         idx2 = 0
         for stmt in stmts_json:
-            evidences = stmt.get("evidence",[])
+            evidences = stmt.get("evidence", [])
             for ev in evidences:
                 if ev["source_api"] in source_apis:
                     valid_stmts.add(stmts[idx])
@@ -96,45 +97,51 @@ def extractFromXML(fileContent, citationCount, term):
         article_topics = topics_string or ""
         pmc_citation_count = citationCount
         OC_CITATION_COUNT = 0
-        if DOI != "":
-            output= requests.get("https://opencitations.net/api/v1/metadata/"+ DOI).json()
-            if len(output) > 0:
-                OC_CITATION_COUNT = output[0]["citation_count"]
-        stmt = indra_db_rest.get_statements_for_paper([('pmid', PMID)]).statements
-        # print(citationCount,stmt)
+        try:
+            if DOI != "":
+                output = requests.get(
+                    "https://opencitations.net/api/v1/metadata/" + DOI).json()
+                if len(output) > 0:
+                    OC_CITATION_COUNT = output[0]["citation_count"]
+        except:
+            pass
+        stmt = indra_db_rest.get_statements_for_paper(
+            [('pmid', PMID)]).statements
         indra_stmt_count = len(stmt)
         # storing in csv file
-        writer.writerow([PMID, term, title, Year, PMCID, DOI,pmc_citation_count, indra_stmt_count, OC_CITATION_COUNT,  getIndraQueryTermStmtCount(term)])
+        writer.writerow([PMID, term, title, Year, PMCID, DOI, pmc_citation_count,
+                         indra_stmt_count, OC_CITATION_COUNT,  getIndraQueryTermStmtCount(term)])
     # Closing file
     destCSV.close()
 
 
-with open("pmid_list.txt") as f:
-    for line in f:
-        try:
-            line = line.strip().split("~")
-            pmid = line[0]
-            term = line[1]
-            flag = True
-            while flag:
-                try:
-                    citationCount_url = requests.get(
-                        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&linkname=pubmed_pmc_refs&id="+pmid)
-                    flag = False
-                except Exception as e:
-                    time.sleep(.5)
+def getEUtilsInfo():
+    with open("pmid_list.txt") as file:
+        for line in file:
+            try:
+                line = line.strip().split("~")
+                pmid = line[0]
+                term = line[1]
+                flag = True
+                while flag:
+                    try:
+                        citationCount_url = requests.get(
+                            "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&linkname=pubmed_pmc_refs&id="+pmid)
+                        flag = False
+                    except Exception as e:
+                        time.sleep(.5)
 
-            count = citationCount(citationCount_url.text)
+                count = citationCount(citationCount_url.text)
 
-            flag = True
-            while flag:
-                try:
-                    xmlContent = requests.get(
-                        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id="+pmid)
-                    flag = False
-                except Exception as e:
-                    time.sleep(.5)
+                flag = True
+                while flag:
+                    try:
+                        xmlContent = requests.get(
+                            "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id="+pmid)
+                        flag = False
+                    except Exception as e:
+                        time.sleep(.5)
 
-            extractFromXML(xmlContent.text, count, term)
-        except Exception as e:
-            print("Err: ", e, line)
+                extractFromXML(xmlContent.text, count, term)
+            except Exception as e:
+                print("Err: ", e, line)
