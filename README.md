@@ -24,18 +24,16 @@ Reactome Failed Searches Analysis
     Input: `pmid_list.txt`  
     Output: `abstracts.txt`
 
-4. **Get MESH Terms for the abstracts**  
-    Upload `abstracts.txt` in [Batch Medical Text Indexer (MTI)](https://ii.nlm.nih.gov/Batch/UTS_Required/mti.shtml) for batch processing. You might have to make an account, which can be done [here](https://uts.nlm.nih.gov/license.html).  
-    You will me notified in mail when processing is done.
-    Download the `text.out` file and note the path to it, this will be input to our next step.
+4. **Get MESH Terms for the abstracts** 
+    Using bash script `handleMTI.sh`
 
 5. **Merge Journal Details and Extracted MESH terms**
     ```sh
     python mergeOutputs.py PATH_TO_STEP_2_output PATH_TO_STEP_3_output
     ```
     Input: Output of Step 2 and 4  
-    Output: `final_output.tsv`
+    Output: `output.tsv`
 
 ## Results
-Final Result : [final_output.tsv](/outputs/final_output.tsv)  
-Stepwise Outputs are present in [outputs](/outputs) directory
+Final Result : `output.tsv`
+Stepwise Outputs are present in `outputs` directory

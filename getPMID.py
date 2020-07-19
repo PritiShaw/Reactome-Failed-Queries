@@ -11,6 +11,9 @@ def _extractListID(filecontent, term):
         for i in ID:
             print(i.text + "~" + term, file=op_file)
 
+"""
+Get PMID for the Query terms
+"""
 def getPMID(terms):
     for term in terms:
         term = term.strip().rpartition(",")[0]
