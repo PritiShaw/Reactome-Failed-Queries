@@ -1,4 +1,3 @@
-# Final
 import requests
 import multiprocessing
 import os
@@ -48,7 +47,6 @@ if __name__ == "__main__":
                 terms.append([])
 
     for chunk in tqdm(terms):
-        print('\t', datetime.datetime.utcnow())
         getPMID(chunk)
         process_mesh = multiprocessing.Process(target=getMESH)
         process_meta = multiprocessing.Process(target=getEUtilsInfo)
