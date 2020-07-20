@@ -3,12 +3,23 @@ import json
 import sys
 import os
 
+"""
+Merge outputs from EUtils and MESH terms from 
 
+Parameters
+----------
+path_eutils:
+    Path to TSV file containing metadata from EUtils
+path_mesh:
+    Path to MESH terms extracted by Web API
+path_output_dir:
+    Path to Output directory
+"""
 def mergeOutputs(path_eutils, path_mesh, path_output_dir):
     details = {}
 
     with open(path_eutils) as f:
-        reader = csv.DictReader(f, delimiter=',')
+        reader = csv.DictReader(f, delimiter='\t')
         for row in reader:
             if row["PMID"] not in details:
                 details[row["PMID"]] = {}
