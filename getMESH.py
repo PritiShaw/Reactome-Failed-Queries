@@ -5,9 +5,7 @@ import time
 from urllib.request import urlopen
 from xml.etree.ElementTree import parse
 
-"""
-Get abstracts from PMID and generate input file for MESH Batch processing
-"""
+
 def getAbstracts():
     with open("pmid_list.txt") as file:
         with open('abstract.txt', 'w') as o:
