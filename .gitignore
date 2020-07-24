@@ -1,2 +1,6 @@
 .vscode
 processor
+__pycache__
+*_cache
+tests/*
+!tests/*.py
