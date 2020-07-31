@@ -1,5 +1,5 @@
 import sys, os
-sys.path.append('../src')
+sys.path.append('../')
 
 from getMESH import getAbstracts
 

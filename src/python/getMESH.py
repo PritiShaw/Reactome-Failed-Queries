@@ -1,22 +1,30 @@
-import requests
-import os
-import time
-
-from urllib.request import urlopen
+# getMESH.py
 from xml.etree.ElementTree import parse
+from urllib.request import urlopen
+import time
+import os
+import requests
+from jnius import autoclass
+import jnius_config
+jnius_config.add_classpath("./lib/*")
 
-"""
-Get abstracts from PMID and generate input file for MESH Batch processing
-"""
-def getAbstracts():
+
+GenericBatchNew = autoclass("GenericBatchNew")
+
+
+def getAbstracts(abstract_filepath):
+    """
+    Get abstracts from PMID and generate input file for MESH Batch processing
+    """
     with open("pmid_list.txt") as file:
-        with open('abstract.txt', 'w') as o:
+        with open(abstract_filepath, 'wb') as o:
             for inp in file:
                 pmid = inp.strip().split("~")[0]
                 flag = True
                 while flag:
                     try:
-                        var_url = urlopen(f'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id={pmid}')
+                        var_url = urlopen(
+                            f'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id={pmid}')
                         flag = False
                     except:
                         time.sleep(.5)
@@ -39,7 +47,18 @@ def getAbstracts():
                     except Exception as e:
                         print("Err: MESH: ", e)
 
+
 def getMESH():
-    getAbstracts()
-    os.system("bash handleMTI.sh >> mesh.txt")
-    
+    abstract_filepath = 'abstract.txt'
+    getAbstracts(abstract_filepath)
+
+    email_id = os.environ['MTI_EMAIL_ID']
+    username = os.environ['MTI_USERNAME']
+    password = os.environ['MTI_PASSWORD']
+
+    batch = GenericBatchNew()
+    result = batch.processor(
+        ["--email", email_id, abstract_filepath], username, password)
+        
+    with open("mesh.txt", "w") as op_file:
+        op_file.write(result)

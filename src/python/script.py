@@ -3,24 +3,26 @@ import multiprocessing
 import os
 import datetime
 
-from tqdm import tqdm
+from tqdm import tqdm_notebook as tqdm
+
 
 from getEUtilsInfo import getEUtilsInfo
 from getMESH import getMESH
 from getPMID import getPMID
 from mergeOutputs import mergeOutputs
 
-history_file_path = "./processor/history"
+history_file_path = "/src/processor/history"
 
-"""
-Save processed terms in file
 
-Parameters
-----------
-terms:  []
-    List of processed terms
-"""
 def saveInHistory(terms):
+    """
+    Save processed terms in file
+
+    Parameters
+    ----------
+    terms:  []
+        List of processed terms
+    """
     with open(history_file_path, "a") as out_file:
         out_file.write('\n'.join(terms)+'\n')
 
@@ -39,7 +41,7 @@ if __name__ == "__main__":
         "https://gist.githubusercontent.com/PritiShaw/03ce10747835390ec8a755fed9ea813d/raw/cc72cb5479f09b574e03ed22c8d4e3147e09aa0c/Reactome.csv")
     inp_terms = terms_request.text.splitlines()
 
-    for term in inp_terms[1:]:
+    for term in inp_terms[1:6]:
         term_parts = term.split(",")
         if len(term_parts) == 2 and int(term_parts[1]) > 9 and term not in history:
             terms[-1].append(term)
@@ -56,7 +58,7 @@ if __name__ == "__main__":
         process_meta.join()
         process_mesh.join()
 
-        mergeOutputs("eutils_output.tsv", "mesh.txt", "./processor")
+        mergeOutputs("eutils_output.tsv", "mesh.txt", "/src/processor")
         history.update(chunk)
         saveInHistory(chunk)
-        os.system("bash cleanup.sh")
+        os.system("rm eutils_output.csv abstract.txt mesh.txt pmid_list.txt")

@@ -1,5 +1,5 @@
 import sys, os, requests
-sys.path.append('../src')
+sys.path.append('../')
 
 from getPMID import _extractListID
 

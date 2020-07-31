@@ -1,16 +1,19 @@
-FROM openjdk:8
+FROM rocker/shiny-verse:3.6.3
+
 
 WORKDIR /src
 
-RUN apt-get update && apt-get upgrade -y && apt-get clean
-RUN apt-get install -y curl python3.7 python3.7-dev python3.7-distutils
-RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
-RUN update-alternatives --set python /usr/bin/python3.7
-RUN curl -s https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
-    python get-pip.py --force-reinstall && \
-    rm get-pip.py
+# Install OpenJDK-11
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends openjdk-11-jre && \
+    apt-get install wget
 
 COPY ./src/ /src/
+RUN wget https://bootstrap.pypa.io/get-pip.py
+RUN python3 get-pip.py
+RUN rm get-pip.py
 
-RUN pip install -r requirements.txt
-CMD python script.py
+RUN R -e 'source("./R/installPackages.R")'
+RUN pip3 install -r ./python/requirements.txt
+
+CMD bash startup.sh
