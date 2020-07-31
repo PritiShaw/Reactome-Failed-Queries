@@ -14,7 +14,6 @@ RUN python3 get-pip.py
 RUN rm get-pip.py
 
 RUN R -e 'source("./R/installPackages.R")'
-
 RUN pip3 install -r ./python/requirements.txt
 
 CMD bash startup.sh

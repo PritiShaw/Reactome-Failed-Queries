@@ -11,7 +11,7 @@ from getMESH import getMESH
 from getPMID import getPMID
 from mergeOutputs import mergeOutputs
 
-history_file_path = "./processor/history"
+history_file_path = "/src/processor/history"
 
 
 def saveInHistory(terms):
@@ -58,7 +58,7 @@ if __name__ == "__main__":
         process_meta.join()
         process_mesh.join()
 
-        mergeOutputs("eutils_output.tsv", "mesh.txt", "./processor")
+        mergeOutputs("eutils_output.tsv", "mesh.txt", "/src/processor")
         history.update(chunk)
         saveInHistory(chunk)
         os.system("rm eutils_output.csv abstract.txt mesh.txt pmid_list.txt")

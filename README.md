@@ -5,10 +5,9 @@ Reactome Query Analysis
 ```
 docker run --name query-processor \
 -e INDRA_DB_REST_URL={Enter API Endpoint} \
+-v /PATH/TO/R/script.Rmd:/src/script.Rmd \
+-v /PATH/TO/Output/HTML/file.html:/src/output.html \
 -v /PATH/TO/OUTPUT/FOLDER:/src/processor \
 -t pritishaw/reactome-query-processing
 ```
 
-
-## Results
-Final Result : `output.tsv` present in folder mounted to `/src/processor`
