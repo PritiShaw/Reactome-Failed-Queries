@@ -1,5 +1,7 @@
-Reactome Query Analysis
+[Deprecated] Reactome Query Analysis
 ---
+
+# This repository is no longer maintained, Please visit new repository at https://github.com/cannin/enhance_nlp_interaction_network_gsoc2020/
 
 ## How to Run
 ```
