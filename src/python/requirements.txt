@@ -17,7 +17,7 @@ isodate==0.6.0
 jedi==0.17.2
 Jinja2==2.11.2
 jmespath==0.10.0
-lxml==4.5.2
+lxml==4.9.1
 MarkupSafe==1.1.1
 mpmath==1.1.0
 ndex2==2.0.1
